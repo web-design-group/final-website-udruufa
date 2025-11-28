@@ -1,0 +1,251 @@
+@font-face {
+    font-family: "QoC";
+    src: url("fonts/QueenOfClubs.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Thin.ttf");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Regular.ttf");
+    font-weight: 400;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 20px;
+    /* border: 1px solid white; */
+}
+
+.h1 {
+    margin-top: 400px;
+    position: relative;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+
+.h1 img {
+    padding: 0;
+    max-width: 100%;
+    /* position: absolute;
+    z-index: -1;
+    top: 50%; */
+    place-self: center;
+    /* border: 1px solid white; */
+}
+
+.h1-p {
+    grid-column-start: 11;
+    padding-top: 400px;
+    white-space: nowrap;
+}
+
+h2 {
+    font-family: "QoC";
+    font-size: 46px;
+    /* border: 1px solid black; */
+    margin: 0;
+}
+
+main p {
+    margin: 0;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+}
+
+header {
+    color: white;
+    padding-top: 10px;
+}
+
+header p {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-family: "QoC";
+    font-size: 28px;
+    margin: 0;
+}
+
+header nav {
+    grid-column-start: 6;
+    grid-column-end: 10;
+    display: grid;
+}
+
+header nav ul {
+    list-style: none;
+    font-family: "Roboto";
+    font-size: 14px;
+    display: grid;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+
+header nav ul.social {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+header nav ul.real-nav {
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+
+header nav ul li {
+    margin: 0;
+    height: 16px;
+    width: 70px;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+header nav ul li a:hover{
+    font-weight: 400;
+}
+
+header .but {
+    grid-column-start: 11;
+    grid-column-end: 13;
+}
+
+header .but button {
+    width: 108px;
+    height: 32px;
+    padding: 8px, 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    border-radius: 18px;
+    background-color: white;
+    border: none;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+header .but button:hover {
+    width: 122px;
+    transition: 300ms ease;
+}
+
+header .but button .arrow {
+    display: none;
+}
+
+header .but button:hover .arrow {
+    display: block;
+    position: relative;
+    top: 1px;
+}
+
+.piercing {
+    padding-top: 100px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: justify;
+    /* font-weight: 200; */
+}
+
+.kto {
+    padding-top: 100px;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    text-align: justify;
+    clear: right;
+}
+
+.kto button {
+    margin-top: 10px;
+    width: 115px;
+    height: 35px;
+    padding: 8px, 16px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 18px;
+    background-color: white;
+    border: 1px solid black;
+    place-self: center;
+}
+
+.kto button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: 300ms ease;
+}
+
+.gde {
+    padding-top: 300px;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    padding-bottom: 100px;
+}
+
+.vector {
+    padding-top: 300px;
+    /* grid-column-start: 9; */
+    grid-column-end: 13;
+}
+
+/* .vector:hover {
+    transform: scale(1.3);
+    transition: 300ms ease;
+} */
+
+footer{
+    background-color: white;
+}
+
+footer .container {
+    height: 60px;
+    /* display: grid; */
+    grid-column-start: 1;
+    grid-column-end: 13;
+    /* justify-content: space-around */
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    
+    color: black;
+    /* border: 1px solid white; */
+}
+
+footer .comp {
+    grid-column-start: 1;
+    white-space: nowrap;
+}
+
+footer .phone {
+    grid-column-end: 13;
+    white-space: nowrap;
+}

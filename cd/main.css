@@ -80,25 +80,25 @@ h2.try-it_h2 {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 20px;
     color: white;
     padding-top: 10px;
 }
 
 header p {
+    grid-column-start: 1;
+    grid-column-end: 2;
     font-family: "QoC";
     font-size: 28px;
     margin: 0;
-    width: 55%;
 }
 
 header nav {
-    float: right;
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-    
+    grid-column-start: 6;
+    grid-column-end: 10;
+    display: grid;
 }
 
 header nav ul {
@@ -112,16 +112,20 @@ header nav ul {
     height: fit-content;
 }
 
+header nav ul.social {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+header nav ul.real-nav {
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+
 header nav ul li {
     margin: 0;
     height: 16px;
     width: 70px;
-}
-
-header nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-weight: 200;
 }
 
 .faq header nav ul li a{
@@ -130,12 +134,19 @@ header nav ul li a{
     font-weight: 300;
 }
 
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+}
+
 header nav ul li a:hover{
     font-weight: 400;
 }
 
 header .but {
-    width: 25%;
+    grid-column-start: 11;
+    grid-column-end: 13;
 }
 
 header .but button {
@@ -247,7 +258,7 @@ main .photos figure figcaption {
     font-size: 14px;
 }
 
-/* price.html */
+/* try-it.html */
 
 main .line {
     padding: 140px 0;
