@@ -30,15 +30,13 @@ body {
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(12, 1fr); 
+    grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     /* border: 1px solid white; */
 }
 
 .h1 {
     margin-top: 400px;
-    position: relative;
-    display: grid;
     grid-column-start: 1;
     grid-column-end: 13;
 }
@@ -46,9 +44,6 @@ body {
 .h1 img {
     padding: 0;
     max-width: 100%;
-    /* position: absolute;
-    z-index: -1;
-    top: 50%; */
     place-self: center;
     /* border: 1px solid white; */
 }
@@ -62,7 +57,6 @@ body {
 h2 {
     font-family: "QoC";
     font-size: 46px;
-    /* border: 1px solid black; */
     margin: 0;
 }
 
@@ -86,13 +80,17 @@ header p {
     margin: 0;
 }
 
-header nav {
-    grid-column-start: 6;
-    grid-column-end: 10;
-    display: grid;
+header nav.social {
+    grid-column-start: 7;
+    grid-column-end: 8;
 }
 
-header nav ul {
+header nav.real-nav {
+    grid-column-start: 8;
+    grid-column-end: 9;
+}
+
+ul {
     list-style: none;
     font-family: "Roboto";
     font-size: 14px;
@@ -103,29 +101,19 @@ header nav ul {
     height: fit-content;
 }
 
-header nav ul.social {
-    grid-column-start: 6;
-    grid-column-end: 7;
-}
-
-header nav ul.real-nav {
-    grid-column-start: 9;
-    grid-column-end: 10;
-}
-
-header nav ul li {
+li {
     margin: 0;
     height: 16px;
     width: 70px;
 }
 
-header nav ul li a{
+a{
     color: white;
     text-decoration: none;
     font-weight: 200;
 }
 
-header nav ul li a:hover{
+a:hover{
     font-weight: 400;
 }
 
@@ -171,7 +159,6 @@ header .but button:hover .arrow {
     grid-column-start: 1;
     grid-column-end: 4;
     text-align: justify;
-    /* font-weight: 200; */
 }
 
 .kto {
@@ -211,15 +198,10 @@ header .but button:hover .arrow {
 }
 
 .vector {
+    max-width: 100%;
     padding-top: 300px;
-    /* grid-column-start: 9; */
     grid-column-end: 13;
 }
-
-/* .vector:hover {
-    transform: scale(1.3);
-    transition: 300ms ease;
-} */
 
 footer{
     background-color: white;
@@ -227,15 +209,12 @@ footer{
 
 footer .container {
     height: 60px;
-    /* display: grid; */
     grid-column-start: 1;
     grid-column-end: 13;
-    /* justify-content: space-around */
     align-items: center;
     font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
-    
     color: black;
     /* border: 1px solid white; */
 }

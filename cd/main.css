@@ -95,13 +95,17 @@ header p {
     margin: 0;
 }
 
-header nav {
-    grid-column-start: 6;
-    grid-column-end: 10;
-    display: grid;
+header nav.social {
+    grid-column-start: 7;
+    grid-column-end: 8;
 }
 
-header nav ul {
+header nav.real-nav {
+    grid-column-start: 8;
+    grid-column-end: 9;
+}
+
+ul {
     list-style: none;
     font-family: "Roboto";
     font-size: 14px;
@@ -112,35 +116,25 @@ header nav ul {
     height: fit-content;
 }
 
-header nav ul.social {
-    grid-column-start: 6;
-    grid-column-end: 7;
-}
-
-header nav ul.real-nav {
-    grid-column-start: 9;
-    grid-column-end: 10;
-}
-
-header nav ul li {
+li {
     margin: 0;
     height: 16px;
     width: 70px;
 }
 
-.faq header nav ul li a{
+.faq a{
     color: black;
     text-decoration: none;
     font-weight: 300;
 }
 
-header nav ul li a{
+a{
     color: white;
     text-decoration: none;
     font-weight: 200;
 }
 
-header nav ul li a:hover{
+a:hover{
     font-weight: 400;
 }
 
