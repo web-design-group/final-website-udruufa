@@ -24,6 +24,7 @@
 body {
     background-color: black;
     color: white;
+    margin: 0;
 }
 
 .container {
@@ -86,8 +87,8 @@ header nav.social {
 }
 
 header nav.real-nav {
-    grid-column-start: 8;
-    grid-column-end: 9;
+    grid-column-start: 9;
+    grid-column-end: 10;
 }
 
 ul {
