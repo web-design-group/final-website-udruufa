@@ -51,18 +51,26 @@ body.faq {
 }
 
 .h1 {
-    width: 100%;
+    width: 100%;  
     margin-top: 400px;
     padding: 0;
     z-index: -1;
+}
+
+.faq-h {
+    float: left;
 }
 
 .h1-2 {
     max-width: 100%;
     margin-top: 400px;
     padding: 0;
-    display: flex;
-    /* border: 1px solid white; */
+    display: block;
+}
+
+.faq .h1-2 {
+    
+    object-fit: none;
 }
 
 .faq hr {
@@ -74,6 +82,7 @@ body.faq {
     padding: 0;
     margin: 0;
     bottom: 24px;
+    width: 100%;
 }
 
 h2 {
@@ -105,8 +114,8 @@ header {
 
 .faq header {
     padding: 0;
-    /* margin: 0; */
     padding-top: 10px;
+    display: flex;
 }
 
 header p {
@@ -136,6 +145,7 @@ header nav.real-nav {
     margin: 0;
     border: 1px solid white;
     float: left;
+    border: none;
 }
 
 ul {
@@ -157,7 +167,7 @@ ul {
 .faq a {
     font-family: "Roboto";
     font-size: 14px;
-    display: grid;
+    /* display: grid; */
     gap: 6px;
     margin: 0;
     padding: 0;
@@ -221,11 +231,13 @@ header .but button {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    
 }
 
 header .but button:hover {
     width: 122px;
     transition: 300ms ease;
+    
 }
 
 header .but button .arrow {
@@ -406,6 +418,19 @@ main .try-it_ending button:hover {
     margin: 0;
 }
 
+.faq header .row {
+    gap: 20px
+}
+
+.faq header .col {
+    padding: 0;
+}
+
+.faq header .for-but {
+    width: 108px;
+    max-width: 100%;
+}
+
 .faq main li {
     white-space: nowrap;
     font-weight: 300;
@@ -460,6 +485,14 @@ main .try-it_ending button:hover {
     padding-left: 8px;
 }
 
+.faq footer p {
+    margin: 0;
+}
+
+.faq .foot-right  {
+    text-align: right;
+}
+
 footer {
     height: 60px;
     display: flex;
@@ -469,3 +502,5 @@ footer {
     font-weight: 400;
     font-size: 14px;
 }
+
+
